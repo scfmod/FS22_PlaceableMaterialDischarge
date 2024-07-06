@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<placeable>
+    <materialDischarge>
+        <activationTrigger node=".." />
+
+        <dichargeNodes>
+            <productionDischarge
+                node="dischargeSide"
+                emptySpeed="250"
+                stopDischargeOnProductionInactive="true"
+                stopDischargeOnEmpty="false"
+                stopDischargeIfNotPossible="false"
+            >
+                <name>$l10n_spillage</name>
+                <fillTypes>TAILINGS</fillTypes>
+
+                <dischargeStateSound template="augerBelt" pitchScale="0.7" volumeScale="1.4" fadeIn="0.2" fadeOut="1" innerRadius="1.0" outerRadius="40.0" linkNode="belt" />
+                <dischargeStateSound template="dischargeLoop" pitchScale="0.7" volumeScale="4.4" fadeIn="0.8" fadeOut="1" innerRadius="1.0" outerRadius="40.0" linkNode="dischargeSide" />
+
+                <effectNodes>
+                    <!-- ... -->
+                </effectNodes>
+
+                <animationNodes>
+                    <animationNode class="ScrollingAnimation" node="belt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV" />
+                </animationNodes>
+
+            </productionDischarge>
+
+            <spawnDischarge
+                node="dischargeArea"
+                litersPerHour="2000"
+                stopDischargeIfNotPossible="false"
+            >
+                <name>$l10n_conveyor</name>
+                <fillTypes>IRONORE</fillTypes>
+
+                <dischargeStateSound template="augerBelt" pitchScale="0.7" volumeScale="1.4" fadeIn="0.2" fadeOut="1" innerRadius="1.0" outerRadius="40.0" linkNode="belt" />
+                <dischargeStateSound template="dischargeLoop" pitchScale="0.7" volumeScale="4.4" fadeIn="0.8" fadeOut="1" innerRadius="1.0" outerRadius="40.0" linkNode="dischargeSide" />
+
+                <effectNodes>
+                    <!-- ... -->
+                </effectNodes>
+
+                <animationNodes>
+                    <animationNode class="ScrollingAnimation" node="belt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV" />
+                </animationNodes>
+            </spawnDischarge>
+        </dichargeNodes>
+    </materialDischarge>
+</placeable>

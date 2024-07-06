@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l10n>
+    <texts>
+        <text name="action_changeMaterial" text="Change material" />
+        <text name="action_changeSettings" text="Output settings" />
+        <text name="action_openControlPanel" text="Open control panel" />
+        <text name="ui_controlPanelDialogTitle" text="Control panel" />
+        <text name="ui_headerFillType" text="Material" />
+        <text name="ui_headerLitersPerHour" text="Liters per hour" />
+        <text name="ui_headerName" text="Output" />
+        <text name="ui_headerStatus" text="Status" />
+        <text name="ui_inputEmptySpeed" text="Empty speed" />
+        <text name="ui_inputLitersPerHour" text="Liters per hour" />
+        <text name="ui_optionCanDischargeToAnyObject" text="Can discharge to all objects" />
+        <text name="ui_optionCanDischargeToAnyObjectTooltip" text="All farms can access discharge" />
+        <text name="ui_optionCanDischargeToGround" text="Can discharge to ground" />
+        <text name="ui_optionCanDischargeToObject" text="Can discharge to objects" />
+        <text name="ui_optionEnabled" text="Enable output" />
+        <text name="ui_outputMaterialDialogTitle" text="Select material" />
+        <text name="ui_outputSettingsDialogTitle" text="Output settings" />
+    </texts>
+</l10n>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement type="empty" profile="newLayer" />
+    <GuiElement type="bitmap" profile="pmd_dialogFullscreenBackground" />
+    <GuiElement type="bitmap" profile="bgVignette" />
+    <GuiElement type="bitmap" profile="bgGlowDialog" />
+
+    <GuiElement type="bitmap" id="dialogElement" profile="pmdControlPanel_dialog">
+        <GuiElement type="bitmap" profile="pmd_stripesBarLeft" />
+        <GuiElement type="bitmap" profile="pmd_stripesBarRight" />
+
+        <GuiElement type="empty" profile="pmd_dialogHeader">
+            <GuiElement type="text" profile="pmd_dialogHeaderTitle" text="$l10n_ui_controlPanelDialogTitle" />
+        </GuiElement>
+
+        <GuiElement type="bitmap" profile="pmdControlPanel_dialogContent">
+            <GuiElement type="bitmap" profile="pmd_topShadow" />
+            <GuiElement type="bitmap" profile="pmd_bottomShadow" />
+
+            <GuiElement type="bitmap" profile="pmdControlPanel_listHeader">
+                <GuiElement type="text" profile="pmdControlPanel_listHeaderName" text="$l10n_ui_headerName" />
+                <GuiElement type="text" profile="pmdControlPanel_listHeaderFillType" text="$l10n_ui_headerFillType" />
+                <!-- <GuiElement type="text" profile="pmdControlPanel_listHeaderLitersPerHour" text="$l10n_ui_headerLitersPerHour" /> -->
+                <GuiElement type="text" profile="pmdControlPanel_listHeaderLitersPerHour" text="" />
+                <GuiElement type="text" profile="pmdControlPanel_listHeaderStatus" text="$l10n_ui_headerStatus" />
+            </GuiElement>
+
+            <GuiElement
+                type="smoothList"
+                id="list"
+                profile="pmdControlPanel_list"
+                onDoubleClick="onItemDoubleClick"
+                focusInit="onOpen"
+            >
+                <GuiElement type="listItem" profile="pmdControlPanel_listItem">
+                    <GuiElement type="text" name="name" profile="pmdControlPanel_listItemName" />
+                    <GuiElement type="text" name="fillType" profile="pmdControlPanel_listItemFillType" />
+                    <GuiElement type="text" name="litersPerHour" profile="pmdControlPanel_listItemLitersPerHour" />
+                    <GuiElement type="text" name="status" profile="pmdControlPanel_listItemStatus" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="threePartBitmap" profile="pmd_dialogListVerticalSlider">
+                <GuiElement type="slider" profile="pmd_dialogListVerticalSliderBar" dataElementId="list" handleFocus="false" />
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="flowLayout" profile="pmd_dialogActionBox">
+            <GuiElement type="button" profile="pmd_dialogActionButtonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton" />
+            <GuiElement type="button" profile="pmd_dialogActionButtonSettings" text="$l10n_action_changeSettings" onClick="onClickSettings" id="settingsButton" />
+            <GuiElement type="button" profile="pmd_dialogActionButtonApply" text="$l10n_action_changeMaterial" onClick="onClickSelectMaterial" id="selectMaterialButton" />
+        </GuiElement>
+    </GuiElement>
+</GUI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement type="empty" profile="newLayer" />
+    <GuiElement type="bitmap" profile="pmdOutputSettings_dialogFullscreenBackground" />
+
+    <GuiElement type="bitmap" id="dialogElement" profile="pmdOutputMaterial_dialog">
+        <GuiElement type="bitmap" profile="pmd_stripesBarLeft" />
+        <GuiElement type="bitmap" profile="pmd_stripesBarRight" />
+
+        <GuiElement type="empty" profile="pmd_dialogHeader">
+            <GuiElement type="text" profile="pmd_dialogHeaderTitle" text="$l10n_ui_outputMaterialDialogTitle" position="0 8px" />
+            <GuiElement type="text" profile="pmd_dialogHeaderSubTitle" id="headerSubTitle" />
+        </GuiElement>
+
+        <GuiElement type="bitmap" profile="pmdOutputMaterial_dialogContent">
+            <GuiElement type="bitmap" profile="pmd_topShadow" />
+            <GuiElement type="bitmap" profile="pmd_bottomShadow" />
+
+            <GuiElement
+                type="smoothList"
+                id="list"
+                profile="pmdOutputMaterial_list"
+                focusInit="onOpen"
+                onDoubleClick="onItemDoubleClick"
+            >
+                <GuiElement type="listItem" profile="pmdOutputMaterial_listItem">
+                    <GuiElement type="bitmap" name="icon" profile="pmdOutputMaterial_listItemIcon" />
+                    <GuiElement type="text" name="title" profile="pmdOutputMaterial_listItemText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="threePartBitmap" profile="pmd_dialogListVerticalSlider">
+                <GuiElement type="slider" profile="pmd_dialogListVerticalSliderBar" dataElementId="list" handleFocus="false" />
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="flowLayout" profile="pmd_dialogActionBox">
+            <GuiElement type="button" profile="pmd_dialogActionButtonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton" />
+            <GuiElement type="button" profile="pmd_dialogActionButtonApply" text="$l10n_button_apply" onClick="onClickApply" id="applyButton" />
+        </GuiElement>
+    </GuiElement>
+</GUI>

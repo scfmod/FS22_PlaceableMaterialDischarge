@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement type="empty" profile="newLayer" />
+    <GuiElement type="bitmap" profile="pmdOutputSettings_dialogFullscreenBackground" />
+
+    <GuiElement type="bitmap" id="dialogElement" profile="pmdOutputSettings_dialog">
+        <GuiElement type="bitmap" profile="pmd_stripesBarLeft" />
+        <GuiElement type="bitmap" profile="pmd_stripesBarRight" />
+
+        <GuiElement type="empty" profile="pmd_dialogHeader">
+            <GuiElement type="text" profile="pmd_dialogHeaderTitle" text="$l10n_ui_outputSettingsDialogTitle" position="0 8px" />
+            <GuiElement type="text" profile="pmd_dialogHeaderSubTitle" id="headerSubTitle" />
+        </GuiElement>
+
+        <GuiElement type="bitmap" profile="pmdOutputSettings_dialogContent">
+            <GuiElement type="bitmap" profile="pmd_topShadow" />
+            <GuiElement type="bitmap" profile="pmd_bottomShadow" />
+
+            <GuiElement type="boxLayout" profile="pmdOutputSettings_layout" id="boxLayout">
+                <GuiElement type="checkedOption" profile="pmd_multiTextOption" onClick="onClickOption" id="enabledOption" margin="0 24px 0 0">
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonLeft" />
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonRight" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionText" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionTitle" text="$l10n_ui_optionEnabled" />
+                    <GuiElement type="bitmap" profile="pmd_multiTextOptionBackground" />
+                </GuiElement>
+
+                <GuiElement type="empty" profile="pmd_inputWrapper" id="litersPerHourInputWrapper">
+                    <GuiElement type="textInput" profile="pmd_textInput" id="litersPerHourInput" onEnterPressed="onLitersPerHourInput" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionTitle" text="$l10n_ui_inputLitersPerHour" id="litersPerHourInputTitle" />
+                </GuiElement>
+
+                <GuiElement type="checkedOption" profile="pmd_multiTextOption" onClick="onClickOption" id="canDischargeToGroundOption">
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonLeft" />
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonRight" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionText" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionTitle" text="$l10n_ui_optionCanDischargeToGround" />
+                    <GuiElement type="bitmap" profile="pmd_multiTextOptionBackground" />
+                </GuiElement>
+                <GuiElement type="checkedOption" profile="pmd_multiTextOption" onClick="onClickOption" id="canDischargeToObjectOption">
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonLeft" />
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonRight" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionText" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionTitle" text="$l10n_ui_optionCanDischargeToObject" />
+                    <GuiElement type="bitmap" profile="pmd_multiTextOptionBackground" />
+                </GuiElement>
+                <GuiElement type="checkedOption" profile="pmd_multiTextOption" onClick="onClickOption" id="canDischargeToAnyObjectOption">
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonLeft" />
+                    <GuiElement type="button" profile="pmd_multiTextOptionButtonRight" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionText" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionTitle" text="$l10n_ui_optionCanDischargeToAnyObject" position="0 8px" />
+                    <GuiElement type="bitmap" profile="pmd_multiTextOptionBackground" />
+                    <GuiElement type="text" profile="pmd_multiTextOptionTooltip" text="$l10n_ui_optionCanDischargeToAnyObjectTooltip" />
+                </GuiElement>
+
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="flowLayout" profile="pmd_dialogActionBox">
+            <GuiElement type="button" profile="pmd_dialogActionButtonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton" />
+        </GuiElement>
+    </GuiElement>
+</GUI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="73">
+    <author>scfmod</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Placeable Material Discharge</en>
+    </title>
+    <description>
+        <en><![CDATA[Material Discharge specialization for placeables.]]></en>
+    </description>
+    <iconFilename>icon_placeableMaterialDischarge.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/main.lua" />
+    </extraSourceFiles>
+
+    <placeableSpecializations>
+        <specialization name="materialDischarge" className="PlaceableMaterialDischarge" filename="scripts/placeableSpecializations/PlaceableMaterialDischarge.lua" />
+    </placeableSpecializations>
+
+    <l10n filenamePrefix="l10n/l10n" />
+</modDesc>

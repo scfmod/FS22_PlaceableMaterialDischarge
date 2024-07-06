@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUIProfiles>
+    <Profile name="pmd_text" extends="textDefault">
+        <Value name="textBold" value="false" />
+        <Value name="textColor" value="$_rgba(text)" />
+        <Value name="textSelectedColor" value="$_rgba(text)" />
+        <Value name="textDisabledColor" value="$_rgba(textDisabled, 0.4)" />
+        <Value name="text2Color" value="$_rgba(black)" />
+    </Profile>
+
+    <Profile name="pmd_button" extends="baseReference">
+        <Value name="size" value="316px 48px" />
+        <Value name="position" value="0 0" />
+        <Value name="margin" value="0" />
+
+        <Value name="handleFocus" value="true" />
+
+        <Value name="textBold" value="false" />
+        <Value name="textMaxWidth" value="290px" />
+        <Value name="textAlignment" value="center" />
+        <Value name="textUpperCase" value="true" />
+        <Value name="textVerticalAlignment" value="middle" />
+
+        <Value name="textSize" value="16px" />
+        <Value name="textColor" value="$_rgba(buttonText)" />
+        <Value name="textFocusedColor" value="$_rgba(buttonTextFocused)" />
+        <Value name="textSelectedColor" value="$_rgba(buttonTextSelected)" />
+        <Value name="textHighlightedColor" value="$_rgba(buttonTextHighlighted)" />
+
+        <Value name="imageColor" value="$_rgba(button, 0.5)" />
+        <Value name="imageDisabledColor" value="$_rgba(buttonDisabled, 0.1)" />
+        <Value name="imageFocusedColor" value="$_rgba(buttonFocused, 0.35)" />
+        <Value name="imageHighlightedColor" value="$_rgba(buttonHighlighted, 0.5)" />
+    </Profile>
+
+    <Profile name="pmd_actionButton" extends="pmd_button">
+        <Value name="size" value="316px 32px" />
+
+        <Value name="handleFocus" value="false" />
+        <Value name="fitToContent" value="true" />
+        <Value name="fitExtraWidth" value="32px" />
+
+        <Value name="iconFilename" value="g_baseUIFilename" />
+        <Value name="iconUVs" value="$preset_keyBoardKeyUVs" />
+        <Value name="iconSize" value="28px 28px" />
+        <Value name="iconTextOffset" value="-8px 0" />
+        <Value name="iconColor" value="$_rgb(actionButtonIcon) 0.5" />
+        <Value name="iconFocusedColor" value="$_rgb(actionButtonIcon) 1" />
+        <Value name="iconSelectedColor" value="$_rgb(actionButtonIcon) 1" />
+        <Value name="iconHighlightedColor" value="$_rgb(actionButtonIcon) 0.8" />
+        <Value name="iconDisabledColor" value="$_rgb(black) 0.4" />
+
+        <Value name="imageColor" value="0 0 0 0" />
+        <Value name="imageFocusedColor" value="0 0 0 0" />
+        <Value name="imageSelectedColor" value="0 0 0 0" />
+        <Value name="imageHighlightedColor" value="0 0 0 0" />
+
+        <Value name="textSize" value="14px" />
+        <Value name="textBold" value="true" />
+        <Value name="textAlignment" value="left" />
+        <Value name="textMaxNumLines" value="1" />
+        <Value name="textAutoWidth" value="true" />
+        <Value name="textColor" value="$_rgb(actionButton) 0.5" />
+        <Value name="textFocusedColor" value="$_rgb(actionButton) 1" />
+        <Value name="textSelectedColor" value="$_rgb(actionButton) 1" />
+        <Value name="textHighlightedColor" value="$_rgb(actionButton) 0.8" />
+        <Value name="textDisabledColor" value="$_rgb(black) 0.4" />
+    </Profile>
+
+    <Profile name="pmd_dialogFullscreenBackground" extends="dialogFullscreenBg">
+        <Value name="imageColor" value="$_rgba(dialogFullscreenBackground)" />
+    </Profile>
+
+    <Profile name="pmd_stripesBarLeft" with="anchorMiddleLeft">
+        <Value name="size" value="20px 704px" />
+        <Value name="position" value="8px 0" />
+
+        <Value name="imageFilename" value="g_materialDischargeUIFilename" />
+        <Value name="imageUVs" value="0 992px 1024px 32px" />
+        <Value name="imageColor" value="$_rgba(stripesBar, 0.1)" />
+        <Value name="imageUVRotation" value="90" />
+    </Profile>
+
+    <Profile name="pmd_stripesBarRight" extends="pmd_stripesBarLeft" with="anchorMiddleRight">
+        <Value name="position" value="-8px 0" />
+    </Profile>
+
+    <Profile name="pmd_topShadow">
+        <Value name="size" value="100px 16px" />
+        <Value name="position" value="0 0" />
+        <Value name="anchors" value="-0.05 1.05 1 1" />
+
+        <Value name="imageUVs" value="0 936px 1024px 56px" />
+        <Value name="imageColor" value="$_rgb(black) 0.4" />
+        <Value name="imageFilename" value="g_materialDischargeUIFilename" />
+    </Profile>
+
+    <Profile name="pmd_bottomShadow" extends="pmd_topShadow">
+        <Value name="anchors" value="-0.05 1.05 0 0" />
+
+        <Value name="imageUVRotation" value="180" />
+    </Profile>
+
+    <Profile name="pmd_dialogTopShadow" extends="pmd_topShadow">
+        <Value name="anchors" value="-0.1 1.1 1 1" />
+    </Profile>
+
+    <Profile name="pmd_dialogBottomShadow" extends="pmd_bottomShadow">
+        <Value name="anchors" value="-0.1 1.1 0 0" />
+    </Profile>
+
+    <Profile name="pmd_dialogHeader" with="anchorTopCenter">
+        <Value name="size" value="420px 58px" />
+    </Profile>
+
+    <Profile name="pmd_dialogHeader" with="anchorTopCenter">
+        <Value name="size" value="420px 58px" />
+    </Profile>
+
+    <Profile name="pmd_dialogHeaderTitle" extends="textDefault" with="anchorBottomCenter">
+        <Value name="size" value="316px 32px" />
+        <Value name="position" value="0" />
+
+        <Value name="textColor" value="$_rgb(primary) 1" />
+        <Value name="textSize" value="24px" />
+        <Value name="textBold" value="false" />
+        <Value name="textAutoWidth" value="true" />
+        <Value name="textUpperCase" value="true" />
+        <Value name="textAlignment" value="center" />
+    </Profile>
+
+    <Profile name="pmd_dialogHeaderSubTitle" extends="textDefault" with="anchorBottomCenter">
+        <Value name="size" value="316px 18px" />
+        <Value name="position" value="0 -8px" />
+
+        <Value name="textColor" value="$_rgba(stripesBar, 0.6)" />
+        <Value name="textSize" value="14px" />
+        <Value name="textBold" value="false" />
+        <Value name="textAutoWidth" value="true" />
+        <Value name="textUpperCase" value="false" />
+        <Value name="textAlignment" value="center" />
+    </Profile>
+
+    <Profile name="pmd_dialogActionBox" extends="baseReference" with="anchorBottomLeft">
+        <Value name="size" value="640px 60px" />
+        <Value name="position" value="80px 8px" />
+
+        <Value name="alignmentX" value="left" />
+        <Value name="alignmentY" value="middle" />
+        <Value name="useFullVisibility" value="false" />
+        <Value name="autoValidateLayout" value="true" />
+
+        <Value name="imageColor" value="$preset_colorTransparent" />
+    </Profile>
+
+    <Profile name="pmd_dialogActionButtonBack" extends="pmd_actionButton">
+        <Value name="inputAction" value="MENU_BACK" />
+        <Value name="clickSound" value="BACK" />
+    </Profile>
+
+    <Profile name="pmd_dialogActionButtonApply" extends="pmd_actionButton">
+        <Value name="inputAction" value="MENU_ACCEPT" />
+        <Value name="clickSound" value="YES" />
+    </Profile>
+
+    <Profile name="pmd_dialogActionButtonSettings" extends="pmd_actionButton">
+        <Value name="inputAction" value="MENU_EXTRA_1" />
+        <Value name="clickSound" value="YES" />
+    </Profile>
+
+    <Profile name="pmd_dialogListVerticalSlider" extends="verticalListSliderRightDocked" with="anchorTopRight">
+        <Value name="size" value="12px 560px" />
+
+        <Value name="imageColor" value="$_rgba(stripesBar, 0.1)" />
+        <Value name="startImageColor" value="$_rgba(stripesBar, 0.1)" />
+        <Value name="endImageColor" value="$_rgba(stripesBar, 0.1)" />
+    </Profile>
+
+    <Profile name="pmd_dialogListVerticalSliderBar" extends="verticalListSliderBar" with="anchorMiddleCenter">
+        <Value name="size" value="6px 552px" />
+
+        <Value name="sliderImageColor" value="$_rgba(stripesBar, 0.1)" />
+        <Value name="startImageColor" value="$_rgba(stripesBar, 0.1)" />
+        <Value name="endImageColor" value="$_rgba(stripesBar, 0.1)" />
+    </Profile>
+
+    <!-- Inputs -->
+
+    <Profile name="pmd_multiTextOption" extends="multiTextOption">
+        <!-- <Value name="size" value="920px 48px" /> -->
+        <Value name="size" value="440px 48px" />
+        <Value name="margin" value="0 4px" />
+
+        <Value name="imageHighlightedColor" value="$_rgb(primary) 1" />
+        <Value name="iconHighlightedColor" value="1 0 0 1" />
+        <Value name="textHighlightedColor" value="$_rgb(white) 1" />
+    </Profile>
+
+    <Profile name="pmd_multiTextOptionButtonLeft" extends="multiTextOptionLeft" with="anchorMiddleRight">
+        <Value name="position" value="-120px 0" />
+
+        <Value name="textHighlightedColor" value="$_rgb(white) 1" />
+
+        <Value name="iconColor" value="$_rgb(white) 1" />
+
+        <Value name="imageColor" value="$_rgba(button, 0.5)" />
+        <Value name="imageDisabledColor" value="$_rgba(buttonDisabled, 0.1)" />
+        <Value name="imageFocusedColor" value="$_rgba(buttonFocused, 0.35)" />
+        <Value name="imageHighlightedColor" value="$_rgba(buttonHighlighted, 0.5)" />
+    </Profile>
+
+    <Profile name="pmd_multiTextOptionButtonRight" extends="pmd_multiTextOptionButtonLeft">
+        <Value name="position" value="0 0" />
+        <Value name="iconUVRotation" value="0" />
+    </Profile>
+
+    <Profile name="pmd_multiTextOptionText" extends="multiTextOptionText" with="anchorMiddleRight">
+        <Value name="size" value="48px 48px" />
+        <Value name="position" value="-60px 0" />
+
+        <Value name="textSize" value="16px" />
+        <Value name="textBold" value="false" />
+        <Value name="textUpperCase" value="true" />
+        <Value name="textColor" value="$_rgba(optionText, 1.0)" />
+        <Value name="textColorFocused" value="$_rgba(optionTextFocused, 1.0)" />
+        <Value name="textColorHighlighted" value="$_rgba(optionTextHighlighted, 1.0)" />
+        <Value name="textColorDisabled" value="$_rgba(optionTextDisabled, 1.0)" />
+    </Profile>
+
+
+    <Profile name="pmd_multiTextOptionTitle" extends="pmd_text" with="anchorMiddleLeft">
+        <Value name="size" value="0 32px" />
+
+        <Value name="textSize" value="15px" />
+        <Value name="textColor" value="$_rgba(optionText, 1.0)" />
+        <Value name="textAutoWidth" value="true" />
+        <Value name="textVerticalAlignment" value="middle" />
+    </Profile>
+
+    <Profile name="pmd_multiTextOptionBackground" extends="multiTextOptionBg" with="anchorMiddleRight">
+        <Value name="size" value="69px 48px" />
+        <Value name="position" value="-50px 0" />
+
+        <Value name="imageColor" value="0 0 0 0.25" />
+        <Value name="imageDisabledColor" value="$_rgba(buttonDisabled, 0.1)" />
+        <Value name="imageFocusedColor" value="$_rgb(primary) 0.05" />
+    </Profile>
+
+    <Profile name="pmd_multiTextOptionTooltip" extends="pmd_text" with="anchorMiddleLeft">
+        <Value name="size" value="240px 48px" />
+        <Value name="position" value="0 -8px" />
+
+        <Value name="textAlignment" value="left" />
+        <Value name="textVerticalAlignment" value="middle" />
+        <Value name="textMaxWidth" value="240px" />
+        <Value name="textMaxNumLines" value="2" />
+        <Value name="textSize" value="12px" />
+        <Value name="textColor" value="$_rgb(text) 0.5" />
+    </Profile>
+
+    <Profile name="pmd_inputWrapper">
+        <Value name="size" value="440px 48px" />
+        <Value name="margin" value="0px 12px 0px 12px" />
+
+        <Value name="focusFallthrough" value="true" />
+    </Profile>
+
+    <Profile name="pmd_textInput" extends="pmd_text" with="anchorMiddleRight">
+        <Value name="size" value="169px 48px" />
+        <Value name="position" value="0 0" />
+
+        <Value name="maxCharacters" value="6" />
+        <Value name="enterWhenClickOutside" value="true" />
+
+        <Value name="textMaxWidth" value="290px" />
+        <Value name="textAlignment" value="center" />
+        <Value name="maxInputTextWidth" value="290px" />
+        <Value name="textVerticalAlignment" value="middle" />
+
+        <Value name="cursorFilename" value="g_baseUIFilename" />
+        <Value name="cursorUVs" value="$preset_colorUVs" />
+        <Value name="cursorSize" value="1px 20px" />
+        <Value name="cursorOffset" value="4px -2px" />
+        <Value name="cursorColor" value="$preset_colorWhite" />
+
+        <Value name="imageColor" value="0 0 0 0.25" />
+        <Value name="imageDisabledColor" value="$_rgba(buttonDisabled, 0.1)" />
+        <Value name="imageFocusedColor" value="$_rgb(primary) 0.05" />
+    </Profile>
+
+    <!-- ControlPanelDialog -->
+
+    <Profile name="pmdControlPanel_dialog" extends="baseReference" with="anchorMiddleCenter">
+        <Value name="size" value="900px 720px" />
+
+        <Value name="imageColor" value="$_rgba(dialogElement, 1.0)" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_dialogContent" extends="emptyPanel" with="anchorMiddleCenter">
+        <Value name="size" value="740px 560px" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listHeader" extends="emptyPanel" with="anchorTopLeft">
+        <Value name="size" value="740px 64px" />
+        <Value name="imageColor" value="$preset_colorListHeaderBackground" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listHeaderItem" extends="textDefault" with="anchorMiddleLeft">
+        <Value name="size" value="20px 20px" />
+
+        <Value name="textSize" value="14px" />
+        <Value name="textUpperCase" value="true" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listHeaderName" extends="pmdControlPanel_listHeaderItem">
+        <Value name="size" value="128px 20px" />
+        <Value name="position" value="12px 0" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listHeaderFillType" extends="pmdControlPanel_listHeaderItem">
+        <Value name="size" value="128px 20px" />
+        <Value name="position" value="300px 0" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listHeaderLitersPerHour" extends="pmdControlPanel_listHeaderItem">
+        <Value name="size" value="120px 20px" />
+        <Value name="position" value="480px 0" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listHeaderStatus" extends="pmdControlPanel_listHeaderItem" with="anchorMiddleRight">
+        <Value name="size" value="120px 20px" />
+        <Value name="position" value="-16px 0" />
+
+        <Value name="textAlignment" value="right" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_list" extends="list" with="anchorBottomRight">
+        <Value name="size" value="740px 492px" />
+
+        <Value name="isHorizontalList" value="false" />
+        <Value name="selectedWithoutFocus" value="true" />
+        <Value name="listItemSpacing" value="2px" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listItem" extends="listItem">
+        <Value name="size" value="440px 48px" />
+
+        <Value name="imageColor" value="$preset_colorListRowBackground" />
+        <Value name="imageFocusedColor" value="$_rgb(mainColor) 0.1" />
+        <Value name="imageSelectedColor" value="$_rgb(mainColor) 0.1" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listItemName" extends="textDefault" with="anchorMiddleLeft">
+        <Value name="size" value="300px 32px" />
+        <Value name="position" value="16px 0" />
+
+        <Value name="textSize" value="14px" />
+        <Value name="textColor" value="$_rgba(listItemText)" />
+        <Value name="textSelectedColor" value="$_rgba(listItemTextSelected)" />
+
+        <Value name="textAutoWidth" value="true" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listItemFillType" extends="textDefault" with="anchorMiddleLeft">
+        <Value name="size" value="140px 32px" />
+        <Value name="position" value="300px 0" />
+
+        <Value name="textSize" value="14px" />
+        <Value name="textColor" value="$_rgba(listItemText)" />
+        <Value name="textSelectedColor" value="$_rgba(listItemTextSelected)" />
+
+        <Value name="textAutoWidth" value="true" />
+        <Value name="textUpperCase" value="false" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listItemLitersPerHour" extends="textDefault" with="anchorMiddleLeft">
+        <Value name="size" value="140px 32px" />
+        <Value name="position" value="480px 0" />
+
+        <Value name="textSize" value="14px" />
+        <Value name="textColor" value="$_rgba(listItemText)" />
+        <Value name="textSelectedColor" value="$_rgba(listItemTextSelected)" />
+
+        <Value name="textAutoWidth" value="true" />
+    </Profile>
+
+    <Profile name="pmdControlPanel_listItemStatus" extends="textDefault" with="anchorMiddleRight">
+        <Value name="size" value="140px 32px" />
+        <Value name="position" value="-16px 0" />
+
+        <Value name="textAlignment" value="right" />
+        <Value name="textSize" value="14px" />
+        <Value name="textColor" value="$_rgba(listItemText)" />
+        <Value name="textSelectedColor" value="$_rgba(listItemTextSelected)" />
+        <Value name="textDisabledColor" value="$_rgba(listItemTextDisabled)" />
+
+        <Value name="textAutoWidth" value="true" />
+    </Profile>
+
+    <!-- OutputMaterialDialog -->
+
+    <Profile name="pmdOutputMaterial_dialog" extends="baseReference" with="anchorMiddleCenter">
+        <Value name="size" value="600px 720px" />
+
+        <Value name="imageColor" value="$_rgba(dialogElement, 1.0)" />
+    </Profile>
+
+    <Profile name="pmdOutputMaterial_dialogContent" extends="emptyPanel" with="anchorMiddleCenter">
+        <Value name="size" value="440px 560px" />
+    </Profile>
+
+    <Profile name="pmdOutputMaterial_list" extends="list" with="anchorBottomRight">
+        <Value name="size" value="440px 560px" />
+
+        <Value name="isHorizontalList" value="false" />
+        <Value name="selectedWithoutFocus" value="true" />
+        <Value name="listItemSpacing" value="2px" />
+    </Profile>
+
+    <Profile name="pmdOutputMaterial_listItem" extends="listItem">
+        <Value name="size" value="440px 48px" />
+
+        <Value name="imageColor" value="$preset_colorListRowBackground" />
+        <Value name="imageFocusedColor" value="$_rgb(mainColor) 0.1" />
+        <Value name="imageSelectedColor" value="$_rgb(mainColor) 0.1" />
+    </Profile>
+
+    <Profile name="pmdOutputMaterial_listItemIcon" with="anchorMiddleLeft">
+        <Value name="size" value="48px 48px" />
+
+        <Value name="imageColor" value="1 1 1 1" />
+        <Value name="imageUVs" value="0 0 1 1" />
+    </Profile>
+
+    <Profile name="pmdOutputMaterial_listItemText" extends="textDefault" with="anchorMiddleLeft">
+        <Value name="size" value="300px 32px" />
+        <Value name="position" value="64px 0" />
+
+        <Value name="textSize" value="14px" />
+        <Value name="textColor" value="$_rgba(listItemText)" />
+        <Value name="textSelectedColor" value="$_rgba(listItemTextSelected)" />
+
+        <Value name="textAutoWidth" value="true" />
+    </Profile>
+
+    <!-- OutputSettingsDialog -->
+
+    <Profile name="pmdOutputSettings_dialogFullscreenBackground" extends="dialogFullscreenBg">
+        <Value name="imageColor" value="$_rgb(dialogFullscreenBackground) 0.7" />
+    </Profile>
+
+    <Profile name="pmdOutputSettings_dialog" extends="baseReference" with="anchorMiddleCenter">
+        <Value name="size" value="600px 720px" />
+
+        <Value name="imageColor" value="$_rgba(dialogElement, 1.0)" />
+    </Profile>
+
+    <Profile name="pmdOutputSettings_dialogContent" extends="emptyPanel" with="anchorMiddleCenter">
+        <Value name="size" value="440px 560px" />
+    </Profile>
+
+    <Profile name="pmdOutputSettings_layout" extends="baseReference" with="anchorBottomRight">
+        <Value name="size" value="440px 560px" />
+
+        <Value name="imageColor" value="0 0 0 0" />
+        <Value name="fitFlowToElements" value="true" />
+        <Value name="flowDirection" value="vertical" />
+
+        <Value name="autoValidateLayout" value="true" />
+    </Profile>
+</GUIProfiles>
